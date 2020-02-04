@@ -80,7 +80,6 @@ console.log(
 function dice() {
   return Math.floor(Math.random() * 6 + 1);
 }
-//  NON O DEI ACABADO NON SEI PORQUE NON ME FUNCIONA :(
 function throwDice() {
   let totalPoints = 0;
   for (let i = 1; totalPoints <= 50; i++) {
