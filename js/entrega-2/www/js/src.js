@@ -3,6 +3,7 @@
 //CALCULADORA IF
 
 /*
+ */
 let operation = ``;
 let numberOperator1 = 0;
 let numberOperator2 = 0;
@@ -42,27 +43,27 @@ switch (operation) {
   case `multiplicacion`:
     console.log(numberOperator1 * numberOperator2);
     break;
-    case `division`:
-      console.log(numberOperator1 / numberOperator2);
-      break;
-      case `potencia`:
-        console.log(numberOperator1 ** numberOperator2);
-        break;
-        default:
-          console.log(`Operación non permitida`);
-          break;
-        }
-        //MEDIA MAS ALTA
-        
-        function mediaTeamMaria(match1, match2, match3) {
-          return (match1 + match2 + match3) / 3;
-        }
-        
-        function mediaTeamPaula(match1, match2, match3) {
-          return (match1 + match2 + match3) / 3;
-        }
-        
-        function mediaTeamRebeca(match1, match2, match3) {
+  case `division`:
+    console.log(numberOperator1 / numberOperator2);
+    break;
+  case `potencia`:
+    console.log(numberOperator1 ** numberOperator2);
+    break;
+  default:
+    console.log(`Operación non permitida`);
+    break;
+}
+//MEDIA MAS ALTA
+
+function mediaTeamMaria(match1, match2, match3) {
+  return (match1 + match2 + match3) / 3;
+}
+
+function mediaTeamPaula(match1, match2, match3) {
+  return (match1 + match2 + match3) / 3;
+}
+
+function mediaTeamRebeca(match1, match2, match3) {
   return (match1 + match2 + match3) / 3;
 }
 
@@ -71,10 +72,9 @@ console.log(
     mediaTeamMaria(62, 34, 55),
     mediaTeamPaula(35, 60, 59),
     mediaTeamRebeca(40, 39, 63)
-    )} puntos`
-    );
-    
-    */
+  )} puntos`
+);
+
 //DADO
 
 function dice() {
