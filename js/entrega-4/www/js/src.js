@@ -1,6 +1,6 @@
 "use strict";
 //EXERCICIO TENDA
-/* const itemNames = ["Camisa", "Pantalon", "Calcetines"];
+const itemNames = ["Camisa", "Pantalon", "Calcetines"];
 const itemPrices = [13, 27, 100];
 
 // ### C l a s s   I t e m ###
@@ -37,14 +37,19 @@ class User {
     this.name = name;
   }
   // Agrega nuevos items al carrito de la compra.
-  addToCart() {
-    for (const itemInCart of this.cart) {
-      if (item.name === itemInCart.item.name) {
-        CartItem.increase()
-      } else {
-        this.cart.push(new CartItem(item))
-      }
+  addToCart(item) {
+
+    //Si esta no carro aumenta
+    //Se non engade
+
+    const itemInCart = this.cart.find(i => i.item.name === item.name);
+
+    if (itemInCart) {
+      itemInCart.increase();
+    } else {
+      this.cart.push(new CartItem(item))
     }
+
   }
   fillCart(limit, catalogue) {
     for (let i = 0; i < limit; i++) {
@@ -72,15 +77,14 @@ const myUser = new User(`Dani`);
 // Llamamos al metodo del usuario que se encarga de agregar items al
 // carrito del usuario.
 myUser.fillCart(5, myCatalogue);
-console.log(myUser)
-
+console.log(myUser.cart)
 // Comprobamos si se han agregado los items al carrito del usuario.
 
- */
+
 
 //EXERCICIO FETCH
 
-const divUrl = `https://api.exchangerate-api.com/v4/latest/EUR`
+/* const divUrl = `https://api.exchangerate-api.com/v4/latest/EUR`
 
 const fetchPromise = fetch(divUrl)
 
@@ -111,4 +115,4 @@ getData(divUrl).then((data) => {
     default:
       console.log(`La divisa introducida no es valida`)
   }
-})
+}) */
