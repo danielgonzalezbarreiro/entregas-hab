@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header.principal {
+  height: 50vh;
+  background-image: url(/img/vacaheader.jpg);
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+}
+
+header.principal h1 {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+header.principal nav {
+  display: flex;
+  flex-direction: row;
+}
+
+header.principal nav a {
+  text-decoration: none;
+  display: flex;
+}
+
+a.comprar {
+  background: black;
+  color: white;
+  padding: 0.5rem 2rem;
+  display: flex;
+  align-self: flex-;
+}
+
+section#navbar nav ul img {
+  display: flex;
+  width: 15rem;
+}
