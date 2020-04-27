@@ -64,8 +64,8 @@ async function showTasksList() {
       }}
     {blue.bold Estado:}  ${
       task.done === true
-        ? chalk.greenBright("completada ✔️")
-        : chalk.bold.redBright("pendiente")
+        ? chalk.greenBright("Completada")
+        : chalk.bold.redBright("Pendente")
       }
     {blue.bold Engadida:} {blue ${task.added}}
     `);
@@ -81,8 +81,8 @@ async function makeDone(index, value) {
     {blue.bold Nombre:} ${chalk.yellow.bold(tasksList.tasks[index].text)}
     {blue.bold Estado:}  ${
     tasksList.tasks[index].done === true
-      ? chalk.greenBright("completada ✔️")
-      : chalk.bold.magentaBright("pendiente")
+      ? chalk.greenBright("Completada")
+      : chalk.bold.redBright("Pendente")
     }
     `);
 }
