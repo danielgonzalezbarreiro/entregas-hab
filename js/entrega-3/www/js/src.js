@@ -9,21 +9,15 @@ function letterCount(str) {
 }
 console.log(letterCount(prompt(`Introduce una frase`)));
 
-//CALCULADORA DECIMAL A BINARIO // NON FUN CAPAZ DE SACALO AINDA SINTO :(
+//CALCULADORA DECIMAL A BINARIO 
 
-function binaryCoverter() {
-  let myNumber = prompt("Escribe el numero que quieres convertir");
-  let splitMyNumber = myNumber.split(``);
-  let result = `0`;
-  for (let i = 0; i < splitMyNumber.length; i++) {
-    if ([i] === 1) {
-      return (result += [i] ** 2);
-    }
-  }
+function binaryCoverter(str) {
+  let decimal = parseInt(str, 2);
+  return decimal
 }
 
-console.log(binaryCoverter()); */
- 
+console.log(binaryCoverter());
+
 //PALINDROMOS
 
 function palindromeTwo() {
