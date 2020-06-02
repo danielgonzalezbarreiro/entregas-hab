@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Div Converter</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <header>
       <h1>Div Converter</h1>
       <main>
         <section>
-        <p id="title">Ammount to convert</p>
-        <input type="number" name="ammount" id="ammount" placeholder="Ammount to convert" autocomplete="off" required/>
-        <select name="divtoconvert" id="divtoconvert"></select>
-        <p id="to">To</p>
-        <select name="converteddiv" id="converteddiv"></select>
-        <button id="convert">Convert</button>
-        <input type="text" id="result" readonly placeholder="Result"/>
+          <p id="title">Ammount to convert</p>
+          <input
+            type="number"
+            name="ammount"
+            id="ammount"
+            placeholder="Ammount to convert"
+            autocomplete="off"
+            required
+          />
+          <select name="divtoconvert" id="divtoconvert"></select>
+          <p id="to">To</p>
+          <select name="converteddiv" id="converteddiv"></select>
+          <button id="convert">Convert</button>
+          <input type="text" id="result" readonly placeholder="Result" />
+        </section>
       </main>
-      </section>
     </header>
     <script type="module" src="js/main.js"></script>
-</body>
+  </body>
 </html>

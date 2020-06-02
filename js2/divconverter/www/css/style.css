@@ -6,7 +6,7 @@
 
 body {
   font-family: sans-serif;
-  background: white;
+  background: rebeccapurple;
   min-height: 200vh;
 }
 
@@ -14,28 +14,73 @@ header,
 main {
   text-align: center;
   padding: 1rem;
+  color: yellow;
 }
 
 header {
   font-size: 24px;
 }
 
-section {
-  display: flex;
+main > section {
+  margin: 0 25rem;
+  display: grid;
+  gap: 0.5rem 1rem;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: repeat(1fr, 5);
+  justify-content: center;
+  grid-template-areas:
+    "title title"
+    "ammount divtoconvert"
+    "to converteddiv"
+    "convert convert"
+    "result result";
 }
 
 section p#title {
-  padding-right: 1rem;
+  grid-area: title;
+}
+
+input#ammount {
+  grid-area: ammount;
+  text-align: center;
+  padding: 0.25rem;
+  justify-self: right;
+  margin-right: 4rem;
+  max-width: 10rem;
 }
 
 section p#to {
-  padding: 0 1rem;
+  grid-area: to;
+  margin-right: 2rem;
+  justify-self: right;
+  margin-right: 8.5rem;
+}
+
+select#divtoconvert {
+  grid-area: divtoconvert;
+  margin-right: 0;
+  justify-self: left;
 }
 
 select#converteddiv {
-  margin: 0 1rem;
+  grid-area: converteddiv;
+  margin-right: 10rem;
+  justify-self: right;
 }
 
 button#convert {
-  padding: 0 1rem;
+  grid-area: convert;
+  margin-left: 19rem;
+  border: 2px solid black;
+  background-color: seashell;
+  padding: 0.5rem;
+  max-width: 10rem;
+}
+
+input#result {
+  grid-area: result;
+  margin-left: 18rem;
+  text-align: center;
+  padding: 0.5rem;
+  max-width: 12rem;
 }
