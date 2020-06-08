@@ -27,9 +27,9 @@
           <img src="@/assets/img/github.png" alt />
         </a>
       </h3>
-      <h3>
+      <h3 class="lnav">
         Project developed with:
-        <a href>Vuejs</a>
+        <a href="https://vuejs.org/">Vuejs</a>
         <a href="https://www.last.fm/api/">LastFM API</a>
         <a href="https://github.com/axios/axios">Axios</a>
         <a href="https://sweetalert2.github.io/">SweetAlert</a>
@@ -88,5 +88,9 @@ export default {
 }
 .name {
   color: #e75a7c;
+}
+.lnav a {
+  text-decoration: none;
+  color: #64dfdf;
 }
 </style>
