@@ -91,6 +91,5 @@ export default {
 }
 .lnav a {
   text-decoration: none;
-  color: #64dfdf;
 }
 </style>
